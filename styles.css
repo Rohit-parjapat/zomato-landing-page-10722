@@ -6,7 +6,7 @@
 }
 
 .hero__section {
-  background: url(images/heroSectionBackground.png);
+  background: url(images/heroSectionBackground.jpg);
   background-size: cover;
   background-position: center;
   color: white;
@@ -196,7 +196,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 1rem;
   margin-top: 1.5rem;
 }
 
@@ -232,12 +232,10 @@
   top: 0;
   left: 0;
   border-radius: 10px;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0.05) 50%,
-    rgba(0, 0, 0, 0.05) 85%
-  );
+  background: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.05) 50%,
+      rgba(0, 0, 0, 0.05) 85%);
   z-index: 5;
 }
 
@@ -254,6 +252,44 @@
 .content h4 {
   font-weight: 400;
   letter-spacing: 0.5px;
+}
+
+.locality_conatiner_heading {
+  margin: 5rem 8rem 10rem 8rem;
+}
+
+.locality_heading {
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+.places_box {
+  border-radius: 5px;
+  padding: 5px;
+  display: inline-flex;
+  box-shadow: 0px 0px 14px -2px #a79e9e;
+}
+
+.locality_link {
+  text-decoration: none;
+  color: black;
+  display: inline-flex;
+}
+
+.places_sub_heading {
+  font-weight: 400;
+  margin: 5px 5px;
+}
+
+.locality_places {
+  color: grey;
+  margin: 5px 5px;
+}
+
+.icon_section {
+  margin: 22px 10px 5px 80px;
 }
 
 .get__the_app {
@@ -370,6 +406,7 @@
 }
 
 @media only screen and (max-width: 1300px) {
+
   .get__the_app .semiContainer .left,
   .get__the_app .semiContainer .right {
     flex: 1;
@@ -399,6 +436,58 @@
     width: 80%;
     flex-direction: column;
   }
+}
+
+.explore_container_box {
+  margin: 5rem;
+}
+
+.explore_container_heading {
+  margin-bottom: 10px;
+}
+
+.explore_heading {
+  font-size: 35px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+.explore_option_box {
+  border: 0.5px solid dimgrey;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 15px 0px;
+}
+
+.explore_option_box>.hovering:hover>.inner_option {
+  display: block;
+}
+
+.explore_option_box:hover {
+  cursor: pointer;
+}
+
+.option_head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner_option {
+  margin-top: 2rem;
+  display: none;
+}
+
+.option_description {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: dimgray;
+}
+
+.inner_option_text {
+  color: lightgray;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 300;
 }
 
 .footer {
